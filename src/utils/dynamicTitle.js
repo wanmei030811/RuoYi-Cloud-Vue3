@@ -1,6 +1,6 @@
-import store from '@/store'
-import defaultSettings from '@/settings'
-import useSettingsStore from '@/store/modules/settings'
+import store from '@/project1/store'
+import defaultSettings from '@/project1/settings'
+import useSettingsStore from '@/project1/store/modules/settings'
 
 /**
  * 动态修改标题

@@ -16,7 +16,7 @@
 </template>
 
 <script setup>
-import useAppStore from "@/store/modules/app";
+import useAppStore from "@/project1/store/modules/app";
 
 const appStore = useAppStore();
 const size = computed(() => appStore.size);
@@ -24,13 +24,13 @@ const route = useRoute();
 const router = useRouter();
 const { proxy } = getCurrentInstance();
 const sizeOptions = ref([
-  { label: "½Ï´ó", value: "large" },
-  { label: "Ä¬ÈÏ", value: "default" },
-  { label: "ÉÔÐ¡", value: "small" },
+  { label: "ï¿½Ï´ï¿½", value: "large" },
+  { label: "Ä¬ï¿½ï¿½", value: "default" },
+  { label: "ï¿½ï¿½Ð¡", value: "small" },
 ]);
 
 function handleSetSize(size) {
-  proxy.$modal.loading("ÕýÔÚÉèÖÃ²¼¾Ö´óÐ¡£¬ÇëÉÔºò...");
+  proxy.$modal.loading("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã²ï¿½ï¿½Ö´ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½ï¿½Ôºï¿½...");
   appStore.setSize(size);
   setTimeout("window.location.reload()", 1000);
 }

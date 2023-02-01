@@ -1,4 +1,4 @@
-import request from '@/utils/request'
+import request from '@/project1/utils/request'
 
 // 查询调度日志列表
 export function listJobLog(query) {

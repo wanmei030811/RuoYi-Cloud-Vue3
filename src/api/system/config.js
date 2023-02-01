@@ -1,4 +1,4 @@
-import request from '@/utils/request'
+import request from '@/project1/utils/request'
 
 // 查询参数列表
 export function listConfig(query) {

@@ -17,10 +17,10 @@
 import { useWindowSize } from '@vueuse/core'
 import Sidebar from './components/Sidebar/index.vue'
 import { AppMain, Navbar, Settings, TagsView } from './components'
-import defaultSettings from '@/settings'
+import defaultSettings from '@/project1/settings'
 
-import useAppStore from '@/store/modules/app'
-import useSettingsStore from '@/store/modules/settings'
+import useAppStore from '@/project1/store/modules/app'
+import useSettingsStore from '@/project1/store/modules/settings'
 
 const settingsStore = useSettingsStore()
 const theme = computed(() => settingsStore.theme);
@@ -63,8 +63,8 @@ function setLayout() {
 </script>
 
 <style lang="scss" scoped>
-  @import "@/assets/styles/mixin.scss";
-  @import "@/assets/styles/variables.module.scss";
+  @import "@/project1/assets/styles/mixin.scss";
+  @import "@/project1/assets/styles/variables.module.scss";
 
 .app-wrapper {
   @include clearfix;

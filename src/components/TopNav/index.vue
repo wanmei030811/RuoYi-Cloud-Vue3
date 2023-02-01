@@ -29,11 +29,11 @@
 </template>
 
 <script setup>
-import { constantRoutes } from "@/router"
-import { isHttp } from '@/utils/validate'
-import useAppStore from '@/store/modules/app'
-import useSettingsStore from '@/store/modules/settings'
-import usePermissionStore from '@/store/modules/permission'
+import { constantRoutes } from "@/project1/router"
+import { isHttp } from '@/project1/utils/validate'
+import useAppStore from '@/project1/store/modules/app'
+import useSettingsStore from '@/project1/store/modules/settings'
+import usePermissionStore from '@/project1/store/modules/permission'
 
 // 顶部栏初始数
 const visibleNumber = ref(null);

@@ -11,8 +11,8 @@
 </template>
 
 <script setup>
-import InnerLink from "../InnerLink/index"
-import useTagsViewStore from '@/store/modules/tagsView'
+import InnerLink from "../InnerLink/index.vue"
+import useTagsViewStore from '@/project1/store/modules/tagsView'
 
 const route = useRoute();
 const tagsViewStore = useTagsViewStore()

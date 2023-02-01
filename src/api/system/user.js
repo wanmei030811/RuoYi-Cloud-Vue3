@@ -1,5 +1,5 @@
-import request from '@/utils/request'
-import { parseStrEmpty } from "@/utils/ruoyi";
+import request from '@/project1/utils/request'
+import { parseStrEmpty } from "@/project1/utils/ruoyi";
 
 // 查询用户列表
 export function listUser(query) {

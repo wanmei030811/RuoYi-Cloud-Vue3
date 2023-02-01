@@ -65,10 +65,10 @@
 </template>
 
 <script setup>
-import { getCodeImg } from "@/api/login";
+import { getCodeImg } from "@/project1/api/login";
 import Cookies from "js-cookie";
-import { encrypt, decrypt } from "@/utils/jsencrypt";
-import useUserStore from '@/store/modules/user'
+import { encrypt, decrypt } from "@/project1/utils/jsencrypt";
+import useUserStore from '@/project1/store/modules/user'
 
 const userStore = useUserStore()
 const router = useRouter();

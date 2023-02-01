@@ -10,7 +10,7 @@
 </template>
 
 <script setup>
-import useTagsViewStore from '@/store/modules/tagsView'
+import useTagsViewStore from '@/project1/store/modules/tagsView'
 
 const tagAndTagSpacing = ref(4);
 const { proxy } = getCurrentInstance();

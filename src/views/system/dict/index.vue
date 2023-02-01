@@ -172,8 +172,8 @@
 </template>
 
 <script setup name="Dict">
-import useDictStore from '@/store/modules/dict'
-import { listType, getType, delType, addType, updateType, refreshCache } from "@/api/system/dict/type";
+import useDictStore from '@/project1/store/modules/dict'
+import { listType, getType, delType, addType, updateType, refreshCache } from "@/project1/api/system/dict/type";
 
 const { proxy } = getCurrentInstance();
 const { sys_normal_disable } = proxy.useDict("sys_normal_disable");

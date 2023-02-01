@@ -49,17 +49,17 @@
 
 <script setup>
 import { ElMessageBox } from 'element-plus'
-import Breadcrumb from '@/components/Breadcrumb'
-import TopNav from '@/components/TopNav'
-import Hamburger from '@/components/Hamburger'
-import Screenfull from '@/components/Screenfull'
-import SizeSelect from '@/components/SizeSelect'
-import HeaderSearch from '@/components/HeaderSearch'
-import RuoYiGit from '@/components/RuoYi/Git'
-import RuoYiDoc from '@/components/RuoYi/Doc'
-import useAppStore from '@/store/modules/app'
-import useUserStore from '@/store/modules/user'
-import useSettingsStore from '@/store/modules/settings'
+import Breadcrumb from '@/project1/components/Breadcrumb/index.vue'
+import TopNav from '@/project1/components/TopNav/index.vue'
+import Hamburger from '@/project1/components/Hamburger/index.vue'
+import Screenfull from '@/project1/components/Screenfull/index.vue'
+import SizeSelect from '@/project1/components/SizeSelect/index.vue'
+import HeaderSearch from '@/project1/components/HeaderSearch/index.vue'
+import RuoYiGit from '@/project1/components/RuoYi/Git/index.vue'
+import RuoYiDoc from '@/project1/components/RuoYi/Doc/index.vue'
+import useAppStore from '@/project1/store/modules/app'
+import useUserStore from '@/project1/store/modules/user'
+import useSettingsStore from '@/project1/store/modules/settings'
 
 const appStore = useAppStore()
 const userStore = useUserStore()
