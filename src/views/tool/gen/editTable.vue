@@ -32,7 +32,7 @@
                 <el-option label="Integer" value="Integer" />
                 <el-option label="Double" value="Double" />
                 <el-option label="BigDecimal" value="BigDecimal" />
-                <el-option label="Date" value="Date" />
+                <el-option label="LocalDateTime" value="LocalDateTime" />
                 <el-option label="Boolean" value="Boolean" />
               </el-select>
             </template>
@@ -127,10 +127,10 @@
 </template>
 
 <script setup name="GenEdit">
-import { getGenTable, updateGenTable } from "@/project1/api/tool/gen";
-import { optionselect as getDictOptionselect } from "@/project1/api/system/dict/type";
-import basicInfoForm from "./basicInfoForm.vue";
-import genInfoForm from "./genInfoForm.vue";
+import { getGenTable, updateGenTable } from "@/api/tool/gen";
+import { optionselect as getDictOptionselect } from "@/api/system/dict/type";
+import basicInfoForm from "./basicInfoForm";
+import genInfoForm from "./genInfoForm";
 
 const route = useRoute();
 const { proxy } = getCurrentInstance();

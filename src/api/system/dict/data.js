@@ -1,4 +1,4 @@
-import request from '@/project1/utils/request'
+import request from '@/utils/request'
 
 // 查询字典数据列表
 export function listData(query) {

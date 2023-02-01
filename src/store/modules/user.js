@@ -1,6 +1,6 @@
-import { login, logout, getInfo } from '@/project1/api/login'
-import { getToken, setToken, removeToken } from '@/project1/utils/auth'
-import defAva from '@/project1/assets/images/profile.jpg'
+import { login, logout, getInfo } from '@/api/login'
+import { getToken, setToken, removeToken } from '@/utils/auth'
+import defAva from '@/assets/images/profile.jpg'
 
 const useUserStore = defineStore(
   'user',

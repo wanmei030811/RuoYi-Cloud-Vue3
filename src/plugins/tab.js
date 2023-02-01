@@ -1,5 +1,5 @@
-import useTagsViewStore from '@/project1/store/modules/tagsView'
-import router from '@/project1/router'
+import useTagsViewStore from '@/store/modules/tagsView'
+import router from '@/router'
 
 export default {
   // 刷新当前tab页签

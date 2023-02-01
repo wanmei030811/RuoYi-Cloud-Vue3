@@ -1,5 +1,5 @@
-import defaultSettings from '@/project1/settings'
-import { useDynamicTitle } from '@/project1/utils/dynamicTitle'
+import defaultSettings from '@/settings'
+import { useDynamicTitle } from '@/utils/dynamicTitle'
 
 const { sideTheme, showSettings, topNav, tagsView, fixedHeader, sidebarLogo, dynamicTitle } = defaultSettings
 

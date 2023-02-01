@@ -1,4 +1,4 @@
-import request from '@/project1/utils/request'
+import request from '@/utils/request'
 
 // 查询生成表数据
 export function listTable(query) {

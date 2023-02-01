@@ -28,9 +28,9 @@
 </template>
 
 <script setup>
-import { isExternal } from '@/project1/utils/validate'
-import AppLink from './Link.vue'
-import { getNormalPath } from '@/project1/utils/ruoyi'
+import { isExternal } from '@/utils/validate'
+import AppLink from './Link'
+import { getNormalPath } from '@/utils/ruoyi'
 
 const props = defineProps({
   // route object

@@ -3,44 +3,46 @@ import { createApp } from 'vue'
 import Cookies from 'js-cookie'
 
 import ElementPlus from 'element-plus'
+import VForm3 from 'vform3-builds'  //引入VForm3库
 import locale from 'element-plus/lib/locale/lang/zh-cn' // 中文语言
 
-import '@/project1/assets/styles/index.scss' // global css
+import '@/assets/styles/index.scss' // global css
+// import 'element-plus/dist/index.css'  //引入element-plus样式
+import 'vform3-builds/dist/designer.style.css'  //引入VForm3样式
 
-import App from './App.vue'
+import App from './App'
 import store from './store'
 import router from './router'
 import directive from './directive' // directive
 
-
 // 注册指令
 import plugins from './plugins' // plugins
-import { download } from '@/project1/utils/request'
+import { download } from '@/utils/request'
 
 // svg图标
 import 'virtual:svg-icons-register'
-import SvgIcon from '@/project1/components/SvgIcon/index.vue'
-import elementIcons from '@/project1/components/SvgIcon/svgicon'
+import SvgIcon from '@/components/SvgIcon'
+import elementIcons from '@/components/SvgIcon/svgicon'
 
 import './permission' // permission control
 
-import { useDict } from '@/project1/utils/dict'
-import { parseTime, resetForm, addDateRange, handleTree, selectDictLabel, selectDictLabels } from '@/project1/utils/ruoyi'
+import { useDict } from '@/utils/dict'
+import { parseTime, resetForm, addDateRange, handleTree, selectDictLabel, selectDictLabels } from '@/utils/ruoyi'
 
 // 分页组件
-import Pagination from '@/project1/components/Pagination/index.vue'
+import Pagination from '@/components/Pagination'
 // 自定义表格工具组件
-import RightToolbar from '@/project1/components/RightToolbar/index.vue'
+import RightToolbar from '@/components/RightToolbar'
 // 文件上传组件
-import FileUpload from "@/project1/components/FileUpload/index.vue"
+import FileUpload from "@/components/FileUpload"
 // 图片上传组件
-import ImageUpload from "@/project1/components/ImageUpload/index.vue"
+import ImageUpload from "@/components/ImageUpload"
 // 图片预览组件
-import ImagePreview from "@/project1/components/ImagePreview/index.vue"
+import ImagePreview from "@/components/ImagePreview"
 // 自定义树选择组件
-import TreeSelect from '@/project1/components/TreeSelect/index.vue'
+import TreeSelect from '@/components/TreeSelect'
 // 字典标签组件
-import DictTag from '@/project1/components/DictTag/index.vue'
+import DictTag from '@/components/DictTag'
 
 const app = createApp(App)
 
@@ -77,5 +79,7 @@ app.use(ElementPlus, {
   // 支持 large、default、small
   size: Cookies.get('size') || 'default'
 })
+//全局注册VForm3(同时注册了v-form-designe、v-form-render等组件)
+app.use(VForm3)
 
 app.mount('#app')

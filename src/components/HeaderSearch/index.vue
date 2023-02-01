@@ -19,9 +19,9 @@
 
 <script setup>
 import Fuse from 'fuse.js'
-import { getNormalPath } from '@/project1/utils/ruoyi'
-import { isHttp } from '@/project1/utils/validate'
-import usePermissionStore from '@/project1/store/modules/permission'
+import { getNormalPath } from '@/utils/ruoyi'
+import { isHttp } from '@/utils/validate'
+import usePermissionStore from '@/store/modules/permission'
 
 const search = ref('');
 const options = ref([]);

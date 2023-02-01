@@ -5,7 +5,7 @@
 </template>
 
 <script setup>
-import { isExternal } from '@/project1/utils/validate'
+import { isExternal } from '@/utils/validate'
 
 const props = defineProps({
   to: {

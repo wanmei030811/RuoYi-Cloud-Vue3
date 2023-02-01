@@ -24,12 +24,12 @@
 </template>
 
 <script setup>
-import Logo from './Logo.vue'
-import SidebarItem from './SidebarItem.vue'
-import variables from '@/project1/assets/styles/variables.module.scss'
-import useAppStore from '@/project1/store/modules/app'
-import useSettingsStore from '@/project1/store/modules/settings'
-import usePermissionStore from '@/project1/store/modules/permission'
+import Logo from './Logo'
+import SidebarItem from './SidebarItem'
+import variables from '@/assets/styles/variables.module.scss'
+import useAppStore from '@/store/modules/app'
+import useSettingsStore from '@/store/modules/settings'
+import usePermissionStore from '@/store/modules/permission'
 
 const route = useRoute();
 const appStore = useAppStore()

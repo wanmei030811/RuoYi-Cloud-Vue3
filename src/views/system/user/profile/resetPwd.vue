@@ -17,7 +17,7 @@
 </template>
 
 <script setup>
-import { updateUserPwd } from "@/project1/api/system/user";
+import { updateUserPwd } from "@/api/system/user";
 
 const { proxy } = getCurrentInstance();
 

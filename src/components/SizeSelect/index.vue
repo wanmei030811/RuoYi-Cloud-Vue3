@@ -16,7 +16,7 @@
 </template>
 
 <script setup>
-import useAppStore from "@/project1/store/modules/app";
+import useAppStore from "@/store/modules/app";
 
 const appStore = useAppStore();
 const size = computed(() => appStore.size);

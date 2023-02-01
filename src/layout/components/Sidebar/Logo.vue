@@ -14,9 +14,9 @@
 </template>
 
 <script setup>
-import variables from '@/project1/assets/styles/variables.module.scss'
-import logo from '@/project1/assets/logo/logo.png'
-import useSettingsStore from '@/project1/store/modules/settings'
+import variables from '@/assets/styles/variables.module.scss'
+import logo from '@/assets/logo/logo.png'
+import useSettingsStore from '@/store/modules/settings'
 
 defineProps({
   collapse: {

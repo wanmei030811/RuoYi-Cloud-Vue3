@@ -1,4 +1,12 @@
 // cover some element-ui styles
+.el-dialog__header{
+  border-bottom: 1px solid #ececec;
+}
+.el-form-item--default .el-form-item__label {
+  line-height: 48px !important;
+  margin-bottom: 8px !important;
+  font-family: 'Microsoft YaHei UI', 'Microsoft YaHei', DengXian, SimSun, 'Segoe UI', Tahoma, Helvetica, sans-serif !important;
+}
 
 .el-breadcrumb__inner,
 .el-breadcrumb__inner a {

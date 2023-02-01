@@ -1,9 +1,9 @@
-import auth from '@/project1/plugins/auth'
-import router, { constantRoutes, dynamicRoutes } from '@/project1/router'
-import { getRouters } from '@/project1/api/menu'
-import Layout from '@/project1/layout/index.vue'
-import ParentView from '@/project1/components/ParentView/index.vue'
-import InnerLink from '@/project1/layout/components/InnerLink/index.vue'
+import auth from '@/plugins/auth'
+import router, { constantRoutes, dynamicRoutes } from '@/router'
+import { getRouters } from '@/api/menu'
+import Layout from '@/layout/index'
+import ParentView from '@/components/ParentView'
+import InnerLink from '@/layout/components/InnerLink'
 
 // 匹配views里面所有的.vue文件
 const modules = import.meta.glob('./../../views/**/*.vue')

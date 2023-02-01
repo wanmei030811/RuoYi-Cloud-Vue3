@@ -150,9 +150,9 @@
 </template>
 
 <script setup name="Gen">
-import { listTable, previewTable, delTable, genCode, synchDb } from "@/project1/api/tool/gen";
-import router from "@/project1/router";
-import importTable from "./importTable.vue";
+import { listTable, previewTable, delTable, genCode, synchDb } from "@/api/tool/gen";
+import router from "@/router";
+import importTable from "./importTable";
 
 const route = useRoute();
 const { proxy } = getCurrentInstance();

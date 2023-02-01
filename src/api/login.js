@@ -1,4 +1,4 @@
-import request from '@/project1/utils/request'
+import request from '@/utils/request'
 
 // 登录方法
 export function login(username, password, code, uuid) {

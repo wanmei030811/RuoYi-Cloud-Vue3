@@ -1,11 +1,11 @@
 import axios from 'axios'
 import { ElNotification , ElMessageBox, ElMessage, ElLoading } from 'element-plus'
-import { getToken } from '@/project1/utils/auth'
-import errorCode from '@/project1/utils/errorCode'
-import { tansParams, blobValidate } from '@/project1/utils/ruoyi'
-import cache from '@/project1/plugins/cache'
+import { getToken } from '@/utils/auth'
+import errorCode from '@/utils/errorCode'
+import { tansParams, blobValidate } from '@/utils/ruoyi'
+import cache from '@/plugins/cache'
 import { saveAs } from 'file-saver'
-import useUserStore from '@/project1/store/modules/user'
+import useUserStore from '@/store/modules/user'
 
 let downloadLoadingInstance;
 // 是否显示重新登录

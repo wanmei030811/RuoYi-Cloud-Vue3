@@ -278,9 +278,9 @@
 </template>
 
 <script setup name="Menu">
-import { addMenu, delMenu, getMenu, listMenu, updateMenu } from "@/project1/api/system/menu";
-import SvgIcon from "@/project1/components/SvgIcon/index.vue";
-import IconSelect from "@/project1/components/IconSelect/index.vue";
+import { addMenu, delMenu, getMenu, listMenu, updateMenu } from "@/api/system/menu";
+import SvgIcon from "@/components/SvgIcon";
+import IconSelect from "@/components/IconSelect";
 import { ClickOutside as vClickOutside } from 'element-plus'
 
 const { proxy } = getCurrentInstance();

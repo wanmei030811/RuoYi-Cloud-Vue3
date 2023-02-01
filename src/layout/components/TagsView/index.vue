@@ -42,11 +42,11 @@
 </template>
 
 <script setup>
-import ScrollPane from './ScrollPane.vue'
-import { getNormalPath } from '@/project1/utils/ruoyi'
-import useTagsViewStore from '@/project1/store/modules/tagsView'
-import useSettingsStore from '@/project1/store/modules/settings'
-import usePermissionStore from '@/project1/store/modules/permission'
+import ScrollPane from './ScrollPane'
+import { getNormalPath } from '@/utils/ruoyi'
+import useTagsViewStore from '@/store/modules/tagsView'
+import useSettingsStore from '@/store/modules/settings'
+import usePermissionStore from '@/store/modules/permission'
 
 const visible = ref(false);
 const top = ref(0);

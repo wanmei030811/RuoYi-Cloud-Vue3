@@ -1,9 +1,9 @@
 import axios from 'axios'
 import { ElMessage } from 'element-plus'
 import { saveAs } from 'file-saver'
-import { getToken } from '@/project1/utils/auth'
-import errorCode from '@/project1/utils/errorCode'
-import { blobValidate } from '@/project1/utils/ruoyi'
+import { getToken } from '@/utils/auth'
+import errorCode from '@/utils/errorCode'
+import { blobValidate } from '@/utils/ruoyi'
 
 const baseURL = import.meta.env.VITE_APP_BASE_API
 
